@@ -1,0 +1,29 @@
+{
+  "name": "tfsbranchnamer",
+  "version": "1.0.0",
+  "description": "Automatically names you branches like '{taskId}_{taskName}'",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --config webpack/webpack.config.js",
+    "hot-reload": "nodemon --watch src --exec \"npm run build\""
+  },
+  "author": "Marius Franzén",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/chrome": "^0.0.184",
+    "@types/jquery": "^3.5.14",
+    "copy-webpack-plugin": "^10.2.4",
+    "nodemon": "^2.0.16",
+    "ts-loader": "^9.3.0",
+    "typescript": "^4.6.4",
+    "webpack": "^5.72.0",
+    "webpack-cli": "^4.9.2"
+  },
+  "dependencies": {
+    "jquery": "^3.6.0"
+  },
+  "nodemonConfig": {
+    "ignore": ["public/*", "dist/*"],
+    "ext": "ts"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "name": "TFS branch namer",
+  "description": "Automatically names your TFS branches like '{taskId}_{taskName}'",
+  "version": "1.5",
+  "author": "Marius Franzén",
+  "homepage_url": "https://www.mariusfranzen.online/",
+  "manifest_version": 3,
+  "permissions": [
+     "scripting",
+     "activeTab"
+  ],
+  "action": {
+    "default_title": "Click to automatically name branch",
+    "default_icon": {
+      "16": "./TFSnamer16.png",
+      "24": "./TFSnamer24.png",
+      "36": "./TFSnamer36.png",
+      "64": "./TFSnamer64.png",
+      "128": "./TFSnamer128.png",
+      "256": "./TFSnamer256.png",
+      "512": "./TFSnamer512.png"
+    }
+  },
+  "background": {
+    "service_worker": "background.js"
+  }
+}
